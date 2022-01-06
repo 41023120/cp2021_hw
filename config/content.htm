@@ -1026,7 +1026,7 @@ run()
 <script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script>
 </p>
 <h3>41023120</h3>
-<p><button id="asd">列出十個座標</button><button id="snake">snake</button><button id="rad">HW1-1</button><button id="autosnake">autosnake</button> <button id="HW">HW1-2</button> <!-- 導入 brython 程式庫 --></p>
+<p><button id="asd">列出十個座標</button><button id="snake">snake</button><button id="rad">HW1-1</button><button id="autosnake">autosnake</button> <button id="HW">HW1-2</button> <button id="test">Final1</button> <!-- 導入 brython 程式庫 --></p>
 <p>
 <script src="/static/brython.js">
 </script>
@@ -1151,7 +1151,16 @@ def HW_inp(ev):
      #Ace.run()
 # id 為 "asd" 的按鈕點按時, 執行 chec_inp 方法
 doc["HW"].bind('click', HW_inp)
-
+test_qwe_url = "https://gist.githubusercontent.com/41023120/0b193042c198425797bcb8f059812d5a/raw/1d3e02a4fad032a6d3e85412544718c79a8adb95/%25E8%2580%2583%25E8%25A9%25A61"
+# 從 gist 取得程式碼
+test_wq = open(test_qwe_url).read()
+def test_inp(ev):
+     Ace.editor.setValue(test_wq)
+     Ace.editor.scrollToRow(0)
+     Ace.editor.gotoLine(0)
+     #Ace.run()
+# id 為 "asd" 的按鈕點按時, 執行 chec_inp 方法
+doc["test"].bind('click', test_inp)
 
 
 # 呼叫函式執行
