@@ -1018,7 +1018,6 @@ run()
 <!-- Brython 程式執行的結果, 都以 brython_div 作為切入位置 -->
 <div id="brython_div"></div>
 <div>
-<h1>HW ALL</h1>
 <!-- 導入 gearUtils-0.9.js Cango 齒輪繪圖程式庫 -->
 <p>
 <script src="https://mde.tw/cp2021/cmsimde/static/Cango-24v03-min.js"></script>
@@ -1026,8 +1025,7 @@ run()
 <script src="https://mde.tw/cp2021/cmsimde/static/SVGpathUtils-6v03-min.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/sylvester.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script>
-</p>
-<h3>41023120</h3>
+</p><h1>41023120</h1>
 <p><button id="asd">列出十個座標</button><button id="snake">snake</button><button id="rad">HW1-1</button><button id="autosnake">autosnake</button> <button id="HW">HW1-2</button> <button id="test">Final1</button> <button id="test2">Final2</button><button id="test3">Final3</button> <!-- 導入 brython 程式庫 --></p>
 <p>
 <script src="/static/brython.js">
@@ -1164,7 +1162,7 @@ def test_inp(ev):
 # id 為 "asd" 的按鈕點按時, 執行 chec_inp 方法
 doc["test"].bind('click', test_inp)
 
-test2_qwe_url = "https://gist.githubusercontent.com/41023120/8b239d26614ef6faa6d54d3b33bb21b9/raw/25b49e54d388450f61a56385872bea3c8eeeb876/test2"
+test2_qwe_url = "https://gist.githubusercontent.com/41023120/8b239d26614ef6faa6d54d3b33bb21b9/raw/22ea29d4438cb527d1e834d895a2729eadc5959a/test2"
 # 從 gist 取得程式碼
 test2_wq = open(test2_qwe_url).read()
 def test2_inp(ev):
@@ -1218,8 +1216,7 @@ run()
 <div></div>
 <div></div>
 <div></div>
-<div>
-<h1>期末考試</h1>
+<div></div><h1>期末考試</h1>
 <p><!-- 導入 gearUtils-0.9.js Cango 齒輪繪圖程式庫 --></p>
 <p>
 <script src="https://mde.tw/cp2021/cmsimde/static/Cango-24v03-min.js"></script>
@@ -1227,7 +1224,7 @@ run()
 <script src="https://mde.tw/cp2021/cmsimde/static/SVGpathUtils-6v03-min.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/sylvester.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script>
-<!-- 導入 brython 程式庫 --></p>
+<button id="test3">Final3</button> <!-- 導入 brython 程式庫 --></p>
 <p>
 <script src="/static/brython.js">
 </script>
@@ -1292,6 +1289,16 @@ def run():
     #exec(prog, ns)
     # 按下 run 按鈕
     Ace.run()
+test3_qwe_url = "https://gist.githubusercontent.com/41023120/98055c5da7fb2efd7e7799864465ed59/raw/5910120956ee8a7b7738e47b85b1f0e48237913c/final"
+# 從 gist 取得程式碼
+test3_wq = open(test3_qwe_url).read()
+def test3_inp(ev):
+     Ace.editor.setValue(test3_wq)
+     Ace.editor.scrollToRow(0)
+     Ace.editor.gotoLine(0)
+     #Ace.run()
+# id 為 "asd" 的按鈕點按時, 執行 chec_inp 方法
+doc["test3"].bind('click', test3_inp)
 
 # 執行程式, 顯示輸出結果與清除輸出結果及對應按鈕綁定
 doc['kw_run'].bind('click', Ace.run)
@@ -1324,4 +1331,4 @@ run()
 <script src="https://mde.tw/cp2021/cmsimde/static/SVGpathUtils-6v03-min.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/sylvester.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script>
-</p></div></div>
+</p></div>
